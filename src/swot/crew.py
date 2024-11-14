@@ -121,7 +121,7 @@ class SwotCrew():
 		return Task(
 			config=self.tasks_config['analise_swot'],
    			output_file='analise_swot.md',
-            guardrails=[{"output_format": "markdown"}, {"max_length": 8000}],
+            guardrails=[{"output_format": "markdown"}, {"max_length": 20000}],
 		)
   
 	@task
@@ -129,7 +129,7 @@ class SwotCrew():
 		return Task(
 			config=self.tasks_config['financiamento_estrategico'],
    			output_file='financiamento_estrategico.md',
-            guardrails=[{"output_format": "markdown"}, {"max_length": 8000}],
+            guardrails=[{"output_format": "markdown"}, {"max_length": 20000}],
 		)
   
 	@task
@@ -137,7 +137,7 @@ class SwotCrew():
 		return Task(
 			config=self.tasks_config['analisar_recomendar'],
 			output_file='analisar_recomendar_swot.md',
-            guardrails=[{"output_format": "markdown"}, {"max_length": 8000}]
+            guardrails=[{"output_format": "markdown"}, {"max_length": 20000}]
 		)
 
 

@@ -14,7 +14,9 @@ extrair_informacoes_site:
       - **Feedbacks de Clientes**: Resumo dos feedbacks obtidos, indicando percepções positivas e críticas que possam sinalizar áreas de melhoria.
       - **Concorrentes e Ameaças do Mercado**: Identificação dos principais concorrentes e mapeamento de riscos que a empresa pode enfrentar no cenário atual.
       - **Notícias e Atualizações Recentes**: Coleta de eventos recentes envolvendo a empresa, como lançamentos de produtos, premiações ou qualquer situação relevante.
+      - **Conclusão e Recomendações**: Resumo das principais descobertas e insights práticos para a empresa. A conclusão deve apresentar uma análise final sobre como as informações extraídas posicionam a empresa no mercado, identificando os aspectos mais críticos e sugerindo ações para fortalecer sua posição, explorar oportunidades e mitigar riscos.
   agent: agente_extracao
+
 
 
 pesquisar_solucoes_ia:
@@ -30,7 +32,9 @@ pesquisar_solucoes_ia:
       - **Benefícios Esperados**: Explicação dos potenciais ganhos em eficiência, economia ou expansão de mercado que cada solução de IA pode trazer.
       - **Aplicações Práticas**: Exemplos de como cada tecnologia pode ser adaptada aos processos da empresa, considerando o setor de atuação e os objetivos estratégicos.
       - **Comparação e Recomendação**: Avaliação das alternativas apresentadas, indicando as mais promissoras para a empresa {site_url}.
+      - **Conclusão e Recomendações**: Resumo com recomendações finais sobre as melhores soluções de IA para a empresa. A conclusão deve enfatizar quais soluções trazem maior valor e alinhamento com os objetivos da empresa, destacando aquelas com maior potencial de impacto positivo e sugerindo um plano prático para a implementação.
   agent: agente_solucoes_ia
+
 
 analise_swot:
   description: >
@@ -44,7 +48,7 @@ analise_swot:
       - **Fraquezas**: Identificação das áreas de melhoria, com explicações sobre como essas limitações podem impactar negativamente a empresa.
       - **Oportunidades**: Análise das oportunidades de mercado que a empresa pode explorar, levando em conta as tendências e as demandas atuais.
       - **Ameaças**: Discussão sobre os principais riscos e desafios externos que a empresa enfrenta e como eles podem influenciar sua posição no mercado.
-      - **Conclusão e Recomendações**: Resumo estratégico e sugestões de ações práticas que a empresa pode tomar para fortalecer sua posição e mitigar riscos.
+      - **Conclusão e Recomendações Estratégicas**: Síntese dos pontos-chave da análise SWOT, com recomendações específicas de ações estratégicas. A conclusão deve ajudar a empresa a identificar como fortalecer seus pontos fortes, como minimizar fraquezas e como se posicionar melhor para aproveitar oportunidades e se proteger contra ameaças. Cada recomendação deve ser prática e diretamente aplicável ao contexto da empresa {site_url}.
   agent: analista_swot
 
 
@@ -58,8 +62,9 @@ financiamento_estrategico:
       - **Fontes de Financiamento**: Descrição detalhada das fontes de financiamento identificadas, com informações sobre as instituições envolvidas e os critérios de elegibilidade.
       - **Comparação de Opções**: Tabelas comparativas que avaliam os termos e condições de cada opção de financiamento, destacando taxas de juros, prazos e requisitos de garantia.
       - **Benefícios e Riscos**: Discussão sobre os benefícios e potenciais riscos de cada opção de financiamento para a empresa, considerando o impacto financeiro a curto e longo prazo.
-      - **Recomendações**: Sugestões sobre as melhores opções de financiamento para a empresa {site_url}, com base na sua situação atual e objetivos estratégicos.
+      - **Conclusão e Recomendações**: Avaliação final das melhores opções de financiamento para a empresa {site_url}, incluindo recomendações práticas sobre quais opções priorizar. A conclusão deve apresentar uma análise concisa dos melhores caminhos de financiamento e como essas escolhas podem apoiar o crescimento e a inovação da empresa no setor de IA.
   agent: analista_financiamento
+
 
 analisar_recomendar:
   description: >
@@ -73,5 +78,5 @@ analisar_recomendar:
       - **Plano de Ação**: Estratégia passo a passo para a implementação de IA, incluindo cronogramas e alocação de recursos.
       - **Opções de Financiamento**: Revisão das oportunidades de financiamento com sugestões detalhadas e valores quando disponíveis.
       - **Sugestões Específicas**: Recomendações adicionais e ajustes necessários para otimizar a adoção de IA.
-      O relatório deve ser objetivo e claro, evitando generalizações e oferecendo insights práticos e específicos para a empresa {site_url}.
+      - **Conclusão**: Análise estratégica e detalhada que sintetize os insights dos relatórios anteriores e defina um caminho claro para a empresa {site_url}. A conclusão deve oferecer uma visão holística, destacando os passos críticos para fortalecer a posição competitiva da empresa, aumentar a eficiência e aproveitar ao máximo as oportunidades apresentadas pela integração da IA. Cada sugestão deve ser prática e customizada para o cenário da empresa.
   agent: agente_analise_recomendacao
