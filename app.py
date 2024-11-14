@@ -1,6 +1,6 @@
 import os
 import streamlit as st
-from src.swot.crew import VidmarmercadoCrew
+from src.swot.crew import SwotCrew
 
 # Title for the Streamlit app
 st.title('Análise SWOT com LLM & AI Agents - by CrewAI')
@@ -17,7 +17,7 @@ if "analise_realizada" not in st.session_state:
 if st.button("Iniciar Análise") and site_url:
     # Run the analysis process
     inputs = {'site_url': site_url}
-    crew_instance = VidmarmercadoCrew().crew()
+    crew_instance = SwotCrew().crew()
 
     # Execute tasks to generate reports
     crew_instance.kickoff(inputs=inputs)
