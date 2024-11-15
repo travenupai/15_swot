@@ -33,9 +33,8 @@ PARA O CASO DE NOVO .VENV :
 
 pip install uv
 crewai install
-uv lock     # um chamado se abre no antivirus para liberar forever
-uv sync     # começa a roda muitas linhas de código pela primeira vez 
-
+uv lock
+uv sync
 
 Ensure you have Python >=3.10 <=3.13 installed on your system. 
 This project uses [UV](https://docs.astral.sh/uv/) for dependency management and package handling, offering a seamless setup and execution experience.

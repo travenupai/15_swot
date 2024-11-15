@@ -43,8 +43,8 @@ class SwotCrew():
 			tools=[search_tool], # Example of custom tool, loaded on the beginning of file
 			verbose=True,
 			allow_delegation=True,
-            allow_interruption=True,
-            allow_fallback=True,
+			allow_interruption=True,
+			allow_fallback=True,
             memory=True,
             llm=llm
 		)
