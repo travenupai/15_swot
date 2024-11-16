@@ -10,11 +10,12 @@ criar um NOVO projeto:
 
 python -m venv .venv
 .venv\Scripts\activate
-pip install crewai    
-python.exe -m pip install --upgrade pip
-pip install crewai crewai-tools
-pip install --upgrade crewai crewai-tools
-pip install streamlit
+pip install uv
+uv pip install crewai    
+uv python.exe -m pip install --upgrade pip
+uv pip install crewai-tools
+uv pip install --upgrade crewai crewai-tools
+uv pip install streamlit
 crewai install
 
 ATENCAO: SÓ PRECISA DAR O CREWAI INSTALL APENAS NO COMEÇO OU QUANDO NOVO pyproject ou novo venv.
@@ -28,13 +29,26 @@ crewai create flow nome_do_flow
 ou
 crewai create pipeline nome_do_pipeline
 
+o .venv deve estar no diretório do pyproject.toml
 
-PARA O CASO DE NOVO .VENV :
+por isso apague o venv antigo, suba para o novo diretório e digite:
+E NO CASO DE NOVO .VENV :
 
+deactivate
+
+cd novo_diretorio
+
+python -m venv .venv
+.venv\Scripts\activate
 pip install uv
+uv pip install crewai    
+uv pip install crewai-tools
+uv pip install --upgrade crewai crewai-tools
+uv pip install streamlit
 crewai install
 uv lock
 uv sync
+
 
 Ensure you have Python >=3.10 <=3.13 installed on your system. 
 This project uses [UV](https://docs.astral.sh/uv/) for dependency management and package handling, offering a seamless setup and execution experience.
