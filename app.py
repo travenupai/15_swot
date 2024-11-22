@@ -9,7 +9,7 @@ from docx import Document
 
 
 # Configuração do título da aplicação
-st.title('Pri Degobbi SWOT Analysis with Artificial Intelligence Agents - Powered by CrewAI')
+st.title('SWOT Analysis with Artificial Intelligence Agents - Powered by CrewAI')
 
 # Campo de entrada para a URL do site
 site_url = st.text_input("Digite a URL do site para análise, incluindo o https:// ")

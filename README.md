@@ -12,10 +12,7 @@ python -m venv .venv
 .venv\Scripts\activate
 pip install uv
 uv pip install crewai    
-uv python.exe -m pip install --upgrade pip
-uv pip install crewai-tools
 uv pip install --upgrade crewai crewai-tools
-uv pip install streamlit
 crewai install
 
 ATENCAO: SÓ PRECISA DAR O CREWAI INSTALL APENAS NO COMEÇO OU QUANDO NOVO pyproject ou novo venv.
