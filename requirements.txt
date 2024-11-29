@@ -1,3 +1,23 @@
+crewai==0.61.0
+crewai-tools==0.8.3
+embedchain==0.1.123        # Compatible with crewai and langchain versions
+langchain==0.3.0           # Matches requirements for crewai-tools
+langchain-openai==0.1.7    # Compatible with embedchain
+openai==1.54.0
+requests==2.32.3
+streamlit>=1.38.0
+python-dotenv==1.0.1
+fpdf2==2.8.1
+python-docx==0.8.11
+pysqlite3-binary
+
+
+
+
+
+
+
+"""
 crewai==0.61.0                   # Orquestra agentes e tarefas
 crewai-tools==0.8.3             # Ferramentas adicionais para CrewAI
 python-dotenv==1.0.1             # Carregar variáveis de ambiente do .env
@@ -7,4 +27,4 @@ streamlit==1.38.0                # Interface Web
 fpdf2==2.8.1                     # Manipulação de PDFs (se necessário)
 python-docx==0.8.11              # Geração de arquivos Word
 pysqlite3-binary
-langchain-openai==0.1.2
+langchain-openai==0.1.2""" 
