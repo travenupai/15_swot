@@ -51,6 +51,7 @@ class SwotCrew():
 
 	@agent
 	def agente_solucoes_ia(self) -> Agent:
+		
 		return Agent(
 			config=self.agents_config['agente_solucoes_ia'],
 			tools=[scrape_tool],

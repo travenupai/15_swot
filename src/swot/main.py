@@ -13,7 +13,7 @@ def run():
     Executar a tripulação.
     """
     inputs = {
-        'site_url': 'https://tgktravel.com.br/'
+        'site_url': 'https://alltak.com.br/'
     }    
      
     # Iniciar a tripulação
