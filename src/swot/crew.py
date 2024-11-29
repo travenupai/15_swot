@@ -1,15 +1,13 @@
-# crew.py
-
 import os
 import openai
-from dotenv import load_dotenv
 from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
-from crewai_tools import SerperDevTool, ScrapeWebsiteTool, ScrapeElementFromWebsiteTool
+from dotenv import load_dotenv
+from crewai_tools import (SerperDevTool, ScrapeWebsiteTool,ScrapeElementFromWebsiteTool)
 from langchain_openai import ChatOpenAI
 
 
-# Load environment variables
+# from vidmarswot.my_llm import MyLLM
 load_dotenv()
 
 # Set up OpenAI API key
@@ -26,8 +24,6 @@ gpt4o                 = ChatOpenAI(model_name="gpt-4o", openai_api_key=api_key)
 gpt_o1                = ChatOpenAI(model_name="o1-preview", openai_api_key=api_key)
 gpt_o1_mini           = ChatOpenAI(model_name="o1-mini", openai_api_key=api_key)
 
-
-# Initialize tools
 search_tool = SerperDevTool()
 scrape_tool = ScrapeWebsiteTool()
 scrape_element_tool = ScrapeElementFromWebsiteTool()
