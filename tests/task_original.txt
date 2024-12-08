@@ -1,0 +1,12 @@
+financiamento_estrategico:
+  description: >
+      Conduzir uma pesquisa detalhada sobre as oportunidades de financiamento disponíveis para a empresa {site_url}, com foco na captação de recursos para iniciativas de Inteligência Artificial. 
+      Este agente deve identificar fontes de capital, incluindo opções privadas e governamentais, que possam financiar a adoção de IA na empresa. 
+      A pesquisa deve considerar diversos tipos de financiamento, como empréstimos, investimentos de capital de risco e opções de crowdfunding, analisando as vantagens, desvantagens e requisitos de cada uma.
+  expected_output: >
+      O agente deve gerar um relatório de no mínimo 1000 palavras, contendo:
+      - **Fontes de Financiamento**: Descrição detalhada das fontes de financiamento identificadas, com informações sobre as instituições envolvidas e os critérios de elegibilidade.
+      - **Comparação de Opções**: Tabelas comparativas que avaliam os termos e condições de cada opção de financiamento, destacando taxas de juros, prazos e requisitos de garantia.
+      - **Benefícios e Riscos**: Discussão sobre os benefícios e potenciais riscos de cada opção de financiamento para a empresa, considerando o impacto financeiro a curto e longo prazo.
+      - **Conclusão e Recomendações**: Avaliação final das melhores opções de financiamento para a empresa {site_url}, incluindo recomendações práticas sobre quais opções priorizar. A conclusão deve apresentar uma análise concisa dos melhores caminhos de financiamento e como essas escolhas podem apoiar o crescimento e a inovação da empresa no setor de IA.
+  agent: analista_financiamento

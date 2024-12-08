@@ -3,7 +3,7 @@ import openai
 from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
 from dotenv import load_dotenv
-from crewai_tools import (SerperDevTool, ScrapeWebsiteTool,ScrapeElementFromWebsiteTool)
+from crewai_tools import SerperDevTool, ScrapeWebsiteTool,ScrapeElementFromWebsiteTool
 from langchain_openai import ChatOpenAI
 
 
@@ -36,9 +36,9 @@ class SwotCrew():
 	def agente_extracao(self) -> Agent:
 		return Agent(
 			config=self.agents_config['agente_extracao'],
-			tools=[search_tool], # Example of custom tool, loaded on the beginning of file
+			tools=[search_tool, scrape_tool, scrape_element_tool], # Example of custom tool, loaded on the beginning of file
 			verbose=True,
-			allow_delegation=True,
+			allow_delegation=False,
 			allow_interruption=True,
 			allow_fallback=True,
             memory=True,
@@ -50,9 +50,9 @@ class SwotCrew():
 		
 		return Agent(
 			config=self.agents_config['agente_solucoes_ia'],
-			tools=[scrape_tool],
+			tools=[search_tool, scrape_tool, scrape_element_tool],
 			verbose=True,
-			allow_delegation=True,
+			allow_delegation=False,
             allow_interruption=True,
             allow_fallback=True,
             memory=True,
@@ -63,9 +63,9 @@ class SwotCrew():
 	def analista_swot(self) -> Agent:
 		return Agent(
 			config=self.agents_config['analista_swot'],
-			tools=[scrape_tool],
+			tools=[search_tool, scrape_tool, scrape_element_tool],
 			verbose=True,
-			allow_delegation=True,
+			allow_delegation=False,
             allow_interruption=True,
             allow_fallback=True,
             memory=True,
@@ -76,9 +76,9 @@ class SwotCrew():
 	def analista_financiamento(self) -> Agent:
 		return Agent(
 			config=self.agents_config['analista_financiamento'],
-			tools=[scrape_tool],
+			tools=[search_tool, scrape_tool, scrape_element_tool],
 			verbose=True,
-			allow_delegation=True,
+			allow_delegation=False,
             allow_interruption=True,
             allow_fallback=True,
             memory=True,
@@ -90,7 +90,7 @@ class SwotCrew():
 		return Agent(
 			config=self.agents_config['agente_analise_recomendacao'],
 			verbose=True,
-			allow_delegation=True,
+			allow_delegation=False,
             allow_interruption=True,
             allow_fallback=True,
             memory=True,
@@ -102,7 +102,7 @@ class SwotCrew():
 	def extrair_informacoes_site(self) -> Task:
 		return Task(
 			config=self.tasks_config['extrair_informacoes_site'],
-			guardrails=[{"output_format": "markdown"}, {"max_length": 8000}],
+			guardrails=[{"output_format": "markdown"}, {"max_length": 10000}],
 		)
 
 	@task
@@ -110,7 +110,7 @@ class SwotCrew():
 		return Task(
 			config=self.tasks_config['pesquisar_solucoes_ia'],
    			output_file='pesquisar_solucoes_ia.md',
-            guardrails=[{"output_format": "markdown"}, {"max_length": 8000}],
+            guardrails=[{"output_format": "markdown"}, {"max_length": 15000}],
 		)
   
 	@task
@@ -126,7 +126,7 @@ class SwotCrew():
 		return Task(
 			config=self.tasks_config['financiamento_estrategico'],
    			output_file='financiamento_estrategico.md',
-            guardrails=[{"output_format": "markdown"}, {"max_length": 20000}],
+            guardrails=[{"output_format": "markdown"}, {"max_length": 30000}],
 		)
   
 	@task
@@ -134,7 +134,7 @@ class SwotCrew():
 		return Task(
 			config=self.tasks_config['analisar_recomendar'],
 			output_file='analisar_recomendar_swot.md',
-            guardrails=[{"output_format": "markdown"}, {"max_length": 20000}]
+            guardrails=[{"output_format": "markdown"}, {"max_length": 15000}]
 		)
 
 

@@ -1,82 +1,110 @@
 extrair_informacoes_site:
   description: >
-      Realizar uma extração detalhada de informações do site {site_url} da empresa. 
-      Focar em coletar dados abrangentes sobre os produtos, serviços, parcerias, valores, visão estratégica, estudos de caso, impacto social, feedbacks de clientes, concorrentes e notícias recentes. 
-      Esta extração é essencial para fornecer uma base sólida para uma análise SWOT detalhada, permitindo uma avaliação precisa das forças, fraquezas, oportunidades e ameaças que impactam diretamente a empresa {site_url}.
-      É importante que cada informação extraída seja contextualizada, de modo a evidenciar como cada aspecto identificado se relaciona com a identidade e o mercado da empresa. 
-      O agente deve priorizar informações que indicam tendências de crescimento, possíveis áreas de inovação e setores onde a empresa se destaca, assim como fatores de risco e desafios.
+    Realizar uma extração detalhada de informações do site {site_url} da empresa. 
+    Focar em coletar dados abrangentes sobre os produtos, serviços, parcerias, valores, visão estratégica, estudos de caso, impacto social, feedbacks de clientes, concorrentes e notícias recentes. 
+    Esta extração é essencial para fornecer uma base sólida para uma análise SWOT detalhada, permitindo uma avaliação precisa das forças, fraquezas, oportunidades e ameaças que impactam diretamente a empresa {site_url}.
+    É importante que cada informação extraída seja contextualizada, de modo a evidenciar como cada aspecto identificado se relaciona com a identidade e o mercado da empresa. 
+    O agente deve priorizar informações que indicam tendências de crescimento, possíveis áreas de inovação e setores onde a empresa se destaca, assim como fatores de risco e desafios.
   expected_output: >
-      O agente deve gerar um relatório estruturado em Markdown com um mínimo de 1000 palavras, organizado em seções específicas:
-      - **Produtos e Serviços**: Descrição detalhada do portfólio, destacando diferenciais e possíveis lacunas que indiquem forças ou fraquezas.
-      - **Missão, Visão e Valores**: Análise da identidade da empresa e como isso contribui para sua imagem e posicionamento estratégico.
-      - **Parcerias e Investimentos**: Relato das principais parcerias e investimentos que ampliam o alcance e as oportunidades de negócio da empresa.
-      - **Impacto Social e Sustentabilidade**: Discussão sobre o compromisso da empresa com a sociedade e o meio ambiente, apontando como isso pode fortalecer a imagem perante clientes e investidores.
-      - **Feedbacks de Clientes**: Resumo dos feedbacks obtidos, indicando percepções positivas e críticas que possam sinalizar áreas de melhoria.
-      - **Concorrentes e Ameaças do Mercado**: Identificação dos principais concorrentes e mapeamento de riscos que a empresa pode enfrentar no cenário atual.
-      - **Notícias e Atualizações Recentes**: Coleta de eventos recentes envolvendo a empresa, como lançamentos de produtos, premiações ou qualquer situação relevante.
-      - **Conclusão e Recomendações**: Resumo das principais descobertas e insights práticos para a empresa. A conclusão deve apresentar uma análise final sobre como as informações extraídas posicionam a empresa no mercado, identificando os aspectos mais críticos e sugerindo ações para fortalecer sua posição, explorar oportunidades e mitigar riscos.
+    O agente deve gerar um relatório estruturado em Markdown com um mínimo de 1000 palavras, organizado em seções específicas:
+    - **Produtos e Serviços**: Descrição detalhada do portfólio, destacando diferenciais e possíveis lacunas que indiquem forças ou fraquezas.
+    - **Missão, Visão e Valores**: Análise da identidade da empresa e como isso contribui para sua imagem e posicionamento estratégico.
+    - **Parcerias e Investimentos**: Relato das principais parcerias e investimentos que ampliam o alcance e as oportunidades de negócio da empresa.
+    - **Impacto Social e Sustentabilidade**: Discussão sobre o compromisso da empresa com a sociedade e o meio ambiente, apontando como isso pode fortalecer a imagem perante clientes e investidores.
+    - **Feedbacks de Clientes**: Resumo dos feedbacks obtidos, indicando percepções positivas e críticas que possam sinalizar áreas de melhoria.
+    - **Concorrentes e Ameaças do Mercado**: Identificação dos principais concorrentes e mapeamento de riscos que a empresa pode enfrentar no cenário atual.
+    - **Notícias e Atualizações Recentes**: Coleta de eventos recentes envolvendo a empresa, como lançamentos de produtos, premiações ou qualquer situação relevante.
+    - **Conclusão e Recomendações**: Resumo das principais descobertas e insights práticos para a empresa. A conclusão deve apresentar uma análise final sobre como as informações extraídas posicionam a empresa no mercado, identificando os aspectos mais críticos e sugerindo ações para fortalecer sua posição, explorar oportunidades e mitigar riscos.
   agent: agente_extracao
-
-
 
 pesquisar_solucoes_ia:
   description: >
-      Realizar uma pesquisa aprofundada de soluções de Inteligência Artificial que possam ser economicamente viáveis e integradas aos processos da empresa {site_url}. 
-      O foco deve estar em ferramentas e tecnologias que sejam acessíveis e ao mesmo tempo eficientes, trazendo benefícios tangíveis e mensuráveis. 
-      Esta pesquisa deve explorar uma variedade de soluções de IA, como automação de processos, análise preditiva, atendimento ao cliente com IA e outras áreas relevantes para o "core business" da empresa. 
-      É importante avaliar a viabilidade de implementação de cada solução, considerando tanto os custos envolvidos quanto o potencial de retorno sobre o investimento (ROI).
+    Realizar uma pesquisa aprofundada de soluções de Inteligência Artificial que possam ser economicamente viáveis e integradas aos processos da empresa {site_url}. 
+    O foco deve estar em ferramentas e tecnologias que sejam acessíveis e ao mesmo tempo eficientes, trazendo benefícios tangíveis e mensuráveis. 
+    Esta pesquisa deve explorar uma variedade de soluções de IA, como automação de processos, análise preditiva, atendimento ao cliente com IA e outras áreas relevantes para o "core business" da empresa. 
+    É importante avaliar a viabilidade de implementação de cada solução, considerando tanto os custos envolvidos quanto o potencial de retorno sobre o investimento (ROI).
   expected_output: >
-      O agente deve entregar um relatório de no mínimo 1000 palavras, detalhando as possíveis soluções de IA encontradas, incluindo:
-      - **Lista de Soluções**: Descrição de cada solução, com detalhes sobre as funcionalidades principais e como ela pode ser aplicada na empresa.
-      - **Custos Estimados**: Análise de custos para implementação de cada solução, incluindo opções de pacotes e licenças quando aplicável.
-      - **Benefícios Esperados**: Explicação dos potenciais ganhos em eficiência, economia ou expansão de mercado que cada solução de IA pode trazer.
-      - **Aplicações Práticas**: Exemplos de como cada tecnologia pode ser adaptada aos processos da empresa, considerando o setor de atuação e os objetivos estratégicos.
-      - **Comparação e Recomendação**: Avaliação das alternativas apresentadas, indicando as mais promissoras para a empresa {site_url}.
-      - **Conclusão e Recomendações**: Resumo com recomendações finais sobre as melhores soluções de IA para a empresa. A conclusão deve enfatizar quais soluções trazem maior valor e alinhamento com os objetivos da empresa, destacando aquelas com maior potencial de impacto positivo e sugerindo um plano prático para a implementação.
+    O agente deve entregar um relatório de no mínimo 1000 palavras, detalhando as possíveis soluções de IA encontradas, incluindo:
+    - **Lista de Soluções**: Descrição de cada solução, com detalhes sobre as funcionalidades principais e como ela pode ser aplicada na empresa.
+    - **Custos Estimados**: Análise de custos para implementação de cada solução, incluindo opções de pacotes e licenças quando aplicável.
+    - **Benefícios Esperados**: Explicação dos potenciais ganhos em eficiência, economia ou expansão de mercado que cada solução de IA pode trazer.
+    - **Aplicações Práticas**: Exemplos de como cada tecnologia pode ser adaptada aos processos da empresa, considerando o setor de atuação e os objetivos estratégicos.
+    - **Comparação e Recomendação**: Avaliação das alternativas apresentadas, indicando as mais promissoras para a empresa {site_url}.
+    - **Conclusão e Recomendações**: Resumo com recomendações finais sobre as melhores soluções de IA para a empresa. A conclusão deve enfatizar quais soluções trazem maior valor e alinhamento com os objetivos da empresa, destacando aquelas com maior potencial de impacto positivo e sugerindo um plano prático para a implementação.
   agent: agente_solucoes_ia
-
 
 analise_swot:
   description: >
-      Analisar detalhadamente as informações coletadas a partir do site {site_url} e fornecer uma análise estratégica abrangente utilizando a matriz SWOT (Forças, Fraquezas, Oportunidades e Ameaças). 
-      Esta análise deve ser fundamentada em dados concretos coletados na etapa de extração e deve explorar como cada fator identificado afeta a competitividade e o potencial de crescimento da empresa. 
-      O objetivo é fornecer uma visão estratégica que permita à empresa tomar decisões informadas sobre seus pontos fortes e fracos, bem como sobre as oportunidades e ameaças externas.
+    Analisar detalhadamente as informações coletadas a partir do site {site_url} e fornecer uma análise estratégica abrangente 
+    sobre a competitividade da empresa utilizando a matriz SWOT (Forças, Fraquezas, Oportunidades e Ameaças). Esta análise deve ser 
+    fundamentada em dados concretos coletados na etapa de extração e deve explorar como cada fator identificado afeta a 
+    competitividade e o potencial de crescimento da empresa. 
+    O objetivo é fornecer uma visão estratégica que permita à empresa tomar decisões informadas sobre seus pontos fortes e fracos, 
+    bem como sobre as oportunidades e ameaças externas.
   expected_output: >
-      O agente deve apresentar um relatório estratégico detalhado, com no mínimo 2000 palavras, contendo as seguintes seções:
-      - **Introdução**: Resumo dos objetivos da análise SWOT e do contexto atual da empresa.
-      - **Forças**: Listagem das principais forças internas, com justificativas e exemplos concretos de como essas forças beneficiam a empresa.
-      - **Fraquezas**: Identificação das áreas de melhoria, com explicações sobre como essas limitações podem impactar negativamente a empresa.
-      - **Oportunidades**: Análise das oportunidades de mercado que a empresa pode explorar, levando em conta as tendências e as demandas atuais.
-      - **Ameaças**: Discussão sobre os principais riscos e desafios externos que a empresa enfrenta e como eles podem influenciar sua posição no mercado.
-      - **Conclusão e Recomendações Estratégicas**: Síntese dos pontos-chave da análise SWOT, com recomendações específicas de ações estratégicas. A conclusão deve ajudar a empresa a identificar como fortalecer seus pontos fortes, como minimizar fraquezas e como se posicionar melhor para aproveitar oportunidades e se proteger contra ameaças. Cada recomendação deve ser prática e diretamente aplicável ao contexto da empresa {site_url}.
+    O agente deve apresentar um relatório estratégico detalhado, com no mínimo 2000 palavras, contendo as seguintes seções:
+    - **Introdução**: Resumo dos objetivos da análise SWOT e do contexto atual da empresa.
+    - **Forças**: Listagem das principais forças internas, com justificativas e exemplos concretos de como essas forças beneficiam a empresa.
+    - **Fraquezas**: Identificação das áreas de melhoria, com explicações sobre como essas limitações podem impactar negativamente a empresa.
+    - **Oportunidades**: Análise das oportunidades de mercado que a empresa pode explorar, levando em conta as tendências e as demandas atuais.
+    - **Ameaças**: Discussão sobre os principais riscos e desafios externos que a empresa enfrenta e como eles podem influenciar sua posição no mercado.
+    - **Conclusão e Recomendações Estratégicas**: Síntese dos pontos-chave da análise SWOT, com plano de ação incluindo cronogramas e 
+       alocação de recursos para as 6 principais ações que a empresa pode tomar para fortalecer suas forças, minimizar suas fraquezas, apresentando 
+       recomendações específicas de ações estratégicas. A conclusão deve ajudar a empresa a identificar como fortalecer seus pontos fortes, 
+       como minimizar fraquezas e como se posicionar melhor para aproveitar oportunidades e se proteger contra ameaças. 
+       Cada recomendação deve ser prática e diretamente aplicável ao contexto da empresa {site_url}.
   agent: analista_swot
-
 
 financiamento_estrategico:
   description: >
-      Conduzir uma pesquisa detalhada sobre as oportunidades de financiamento disponíveis para a empresa {site_url}, com foco na captação de recursos para iniciativas de Inteligência Artificial. 
-      Este agente deve identificar fontes de capital, incluindo opções privadas e governamentais, que possam financiar a adoção de IA na empresa. 
-      A pesquisa deve considerar diversos tipos de financiamento, como empréstimos, investimentos de capital de risco e opções de crowdfunding, analisando as vantagens, desvantagens e requisitos de cada uma.
+    Receber informações do agente_extracao e do analista_swot, entender o contexto do tamanho da empresa e da necessidade de financiamento, 
+    e conduzir uma pesquisa detalhada e abrangente sobre as oportunidades de financiamento disponíveis para a empresa {site_url}, 
+    com foco na captação de recursos para iniciativas de Inteligência Artificial e da análise SWOT. 
+    O agente deve identificar e analisar fontes de capital, incluindo opções privadas e governamentais, que possam financiar a adoção de IA 
+    na empresa. A pesquisa deve considerar diversos tipos de financiamento, como:
+    - **Empréstimos bancários** (públicos e privados)
+    - **Subsídios e programas governamentais** de incentivo à inovação
+    - **Investimentos de capital de risco** e **investidores-anjo**
+    - **Opções de crowdfunding** e financiamento coletivo
+    - **Parcerias estratégicas** com outras empresas ou instituições de pesquisa
+    A análise deve incluir vantagens, desvantagens, requisitos, procedimentos para obtenção e relevância para a empresa em questão.
   expected_output: >
-      O agente deve gerar um relatório de no mínimo 1000 palavras, contendo:
-      - **Fontes de Financiamento**: Descrição detalhada das fontes de financiamento identificadas, com informações sobre as instituições envolvidas e os critérios de elegibilidade.
-      - **Comparação de Opções**: Tabelas comparativas que avaliam os termos e condições de cada opção de financiamento, destacando taxas de juros, prazos e requisitos de garantia.
-      - **Benefícios e Riscos**: Discussão sobre os benefícios e potenciais riscos de cada opção de financiamento para a empresa, considerando o impacto financeiro a curto e longo prazo.
-      - **Conclusão e Recomendações**: Avaliação final das melhores opções de financiamento para a empresa {site_url}, incluindo recomendações práticas sobre quais opções priorizar. A conclusão deve apresentar uma análise concisa dos melhores caminhos de financiamento e como essas escolhas podem apoiar o crescimento e a inovação da empresa no setor de IA.
+    O agente deve gerar um relatório de **no mínimo 3000 palavras**, contendo:
+    - **Introdução**: Contextualização da importância da IA para a empresa e a necessidade de financiamento.
+    - **Fontes de Financiamento**:
+      - Descrição detalhada de cada fonte de financiamento identificada, incluindo informações sobre as instituições envolvidas, objetivos dos programas e critérios de elegibilidade.
+      - Incluir as principais fontes públicas e privadas com as taxas mais acessíveis.
+    - **Como Obter**:
+      - Instruções passo a passo sobre como acessar cada opção de financiamento.
+      - Informações de contato relevantes, datas importantes (como prazos de inscrição) e links para recursos adicionais.
+    - **Requisitos e Condições**:
+      - Detalhes sobre o que é necessário para obter o financiamento, como documentação exigida, requisitos de elegibilidade específicos, garantias solicitadas e quaisquer condições especiais.
+      - **Detalhes financeiros completos**: montantes disponíveis, períodos de carência, prazos de pagamento, taxas de juros e outros custos associados.
+    - **Comparação de Opções**:
+      - Tabelas comparativas que avaliem os termos e condições de cada opção de financiamento.
+      - Destaque para taxas de juros, prazos, montantes máximos/mínimos, carência e requisitos de garantia.
+    - **Benefícios e Riscos**:
+      - Discussão aprofundada sobre os benefícios e potenciais riscos de cada opção para a empresa.
+      - Considerar o impacto financeiro a curto, médio e longo prazo, além de possíveis implicações estratégicas.
+    - **Conclusão e Recomendações**:
+      - Avaliação final das melhores opções de financiamento para a empresa {site_url}.
+      - Recomendações práticas e justificadas sobre quais opções priorizar.
+      - Orientações sobre os próximos passos para acessar os financiamentos recomendados.
+    - **Anexos (se necessário)**:
+      - Inclua quaisquer materiais adicionais relevantes, como modelos de documentos, listas de verificação ou recursos úteis.
   agent: analista_financiamento
-
 
 analisar_recomendar:
   description: >
-      Consolidar todas as informações extraídas, pesquisadas e analisadas pelos agentes anteriores e gerar um relatório final que forneça recomendações detalhadas sobre como integrar IA de forma econômica na empresa {site_url}. 
-      Este relatório deve incluir uma análise completa, abordando aspectos técnicos e estratégicos, e deve culminar em um plano de ação específico e viável. 
-      O agente deve se concentrar em fornecer uma visão prática e aplicável, com base nas necessidades e no "core business" da empresa.
+    Consolidar todas as informações extraídas, pesquisadas e analisadas pelos agentes anteriores e gerar um relatório final que forneça recomendações detalhadas sobre como integrar IA de forma econômica na empresa {site_url}. 
+    Este relatório deve incluir uma análise completa, abordando aspectos técnicos e estratégicos, e deve culminar em um plano de ação específico e viável. 
+    O agente deve se concentrar em fornecer uma visão prática e aplicável, com base nas necessidades e no "core business" da empresa.
   expected_output: >
-      O relatório final, de no mínimo 2000 palavras, deve ser formatado em Markdown e conter as seguintes seções:
-      - **Soluções de Integração de IA**: Resumo das melhores soluções encontradas e suas justificativas.
-      - **Análise SWOT Consolidada**: Visão geral das forças, fraquezas, oportunidades e ameaças, com recomendações específicas baseadas nesta análise.
-      - **Plano de Ação**: Estratégia passo a passo para a implementação de IA, incluindo cronogramas e alocação de recursos.
-      - **Opções de Financiamento**: Revisão das oportunidades de financiamento com sugestões detalhadas e valores quando disponíveis.
-      - **Sugestões Específicas**: Recomendações adicionais e ajustes necessários para otimizar a adoção de IA.
-      - **Conclusão**: Análise estratégica e detalhada que sintetize os insights dos relatórios anteriores e defina um caminho claro para a empresa {site_url}. A conclusão deve oferecer uma visão holística, destacando os passos críticos para fortalecer a posição competitiva da empresa, aumentar a eficiência e aproveitar ao máximo as oportunidades apresentadas pela integração da IA. Cada sugestão deve ser prática e customizada para o cenário da empresa.
+    O relatório final, de no mínimo 2000 palavras, deve ser formatado em Markdown e conter as seguintes seções:
+    - **Soluções de Integração de IA**: Resumo das melhores soluções encontradas e suas justificativas.
+    - **Análise SWOT Consolidada**: Visão geral das forças, fraquezas, oportunidades e ameaças, com recomendações específicas baseadas nesta análise.
+    - **Plano de Ação**: Estratégia passo a passo para a implementação de IA, incluindo cronogramas e alocação de recursos.
+    - **Opções de Financiamento**: Revisão das oportunidades de financiamento com sugestões detalhadas e valores quando disponíveis.
+    - **Sugestões Específicas**: Recomendações adicionais e ajustes necessários para otimizar a adoção de IA.
+    - **Conclusão**: Análise estratégica e detalhada que sintetize os insights dos relatórios anteriores e defina um caminho claro para a empresa {site_url}. A conclusão deve oferecer uma visão holística, destacando os passos críticos para fortalecer a posição competitiva da empresa, aumentar a eficiência e aproveitar ao máximo as oportunidades apresentadas pela integração da IA. Cada sugestão deve ser prática e customizada para o cenário da empresa.
   agent: agente_analise_recomendacao
